@@ -18,7 +18,7 @@ import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.jpeg'
 
 const drawerWidth = 240;
-const navItems = ['About us', 'Courses', 'Careers','Contact us','Blogs','Sign in'];
+const navItems = ['Aboutus', 'Courses', 'Careers','Contactus','Blogs','Signin'];
 
 function Navbar(props) {
 
