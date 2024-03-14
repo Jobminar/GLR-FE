@@ -11,7 +11,6 @@ export default function Signup() {
     dateOfBirth: "",
     location: "",
     alternateNumber: "",
-    password: "",
   });
   const handleLoginClick = () => {
     // Navigate to the /login route
@@ -27,7 +26,7 @@ export default function Signup() {
 
     try {
       // Make a POST request to the /signup endpoint
-      const response = await fetch("https://jk-skills.onrender.com/signup", {
+      const response = await fetch("https://glr-be.onrender.com/verify-otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -134,7 +133,7 @@ export default function Signup() {
                 onChange={handleInputChange}
               />
             </div>
-            <div className="form-group mb-3">
+            {/* <div className="form-group mb-3">
               <input
                 type="password"
                 id="password"
@@ -143,7 +142,7 @@ export default function Signup() {
                 required
                 onChange={handleInputChange}
               />
-            </div>
+            </div> */}
 
             <button
               type="submit"

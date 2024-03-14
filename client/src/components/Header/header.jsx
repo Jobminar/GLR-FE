@@ -21,6 +21,7 @@ const drawerWidth = 240;
 const navItems = ['Aboutus', 'Courses', 'Careers','Contactus','Blogs','Signin'];
 
 function Navbar(props) {
+  
 
     const navigate=useNavigate()
   const { window } = props;
@@ -33,7 +34,7 @@ function Navbar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6">
-      < img src={logo} alt='chandra' style={{width:"15%",height:"50px"}}/>
+      < img src={logo} alt='chandra' style={{width:"15%",height:"50px"}} onClick={()=>navigate('/')}/>
       </Typography>
       <Divider />
       <List>
@@ -70,7 +71,7 @@ function Navbar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-        < img src={logo} alt='chandra' style={{width:"15%",height:"50px"}}/>
+        < img src={logo} alt='chandra' style={{width:"15%",height:"50px"}} onClick={()=>navigate('/')}/>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
