@@ -23,6 +23,7 @@ function Routing() {
                 <Route path="/Contactus" element={<Navbar><Contactus/></Navbar>}/>
                 <Route path="/Blogs" element={<Navbar><Blogs/></Navbar>}/>
                 <Route path="/Signin" element={<Navbar><Signup/></Navbar>}/>
+                {/* <Route path="/otp" element={<Navbar><Otp/></Navbar>}/> */}
             </Routes>         
          </BrowserRouter>
     </>

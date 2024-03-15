@@ -1,13 +1,15 @@
 import React from 'react'
 import { useContext } from 'react'
 import {Data} from '../Contextprovider'
+import Homecources from './Homecources'
 
 const Home = () => {
   const {fullname} = useContext(Data)
   return (
       <>
-         Home
-          <p>Name : {fullname}</p> 
+          <div>Main con
+            <Homecources/>
+          </div>
 
       </>
   )

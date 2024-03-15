@@ -14,7 +14,7 @@ export default function Signup() {
   });
   const handleLoginClick = () => {
     // Navigate to the /login route
-    navigate("/login");
+    navigate("/otp");
   };
   const handleInputChange = (e) => {
     const { id, value } = e.target;
@@ -26,7 +26,7 @@ export default function Signup() {
 
     try {
       // Make a POST request to the /signup endpoint
-      const response = await fetch("https://glr-be.onrender.com/verify-otp", {
+      const response = await fetch("https://glr-be.onrender.com/user/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export default function Signup() {
       if (response.ok) {
         console.log("User successfully registered");
         // Optionally, you can redirect the user to the login page after successful registration
-        navigate("/login");
+        navigate("/otp");
       } else {
         // Handle errors for unsuccessful requests
         const data = await response.json();
